@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magehiren_Sellwithus Menu
+ *
+ * @package     Magehiren_Sellwithus
+ *
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magehiren_Sellwithus::manager" title="Sellwithus" module="Magehiren_Sellwithus" sortOrder="10" resource="Magehiren_Sellwithus::manager"/>
+        <add id="Magehiren_Sellwithus::add_row" title="Sellwithus" module="Magehiren_Sellwithus" sortOrder="20" parent="Magehiren_Sellwithus::manager" action="sellwithus/grid" resource="Magehiren_Sellwithus::add_row"/>
+    </menu>
+</config>

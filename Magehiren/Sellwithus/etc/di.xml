@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magehiren\Sellwithus\Api\Data\GridInterface" type="Magehiren\Sellwithus\Model\Sellwithus" />
+    <virtualType name="Magehiren\Sellwithus\Model\ResourceModel\Sellwithus\Sellwithus\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">magehiren_sellwithus</argument>
+            <argument name="resourceModel" xsi:type="string">Magehiren\Sellwithus\Model\ResourceModel\Sellwithus</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="sellwithus_record_grid_list_data_source" xsi:type="string">Magehiren\Sellwithus\Model\ResourceModel\Sellwithus\Sellwithus\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

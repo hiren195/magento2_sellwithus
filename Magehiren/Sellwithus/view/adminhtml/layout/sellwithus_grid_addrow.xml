@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magehiren_Sellwithus add row layout
+ * @category    Magehiren
+ * @package     Magehiren_Sellwithus
+ * @author      Magehiren
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+           <block class="Magehiren\Sellwithus\Block\Adminhtml\Grid\AddRow" name="add_row" />
+        </referenceContainer>
+    </body>
+</page>
